@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+<<<<<<< HEAD
 html {
     font-size: 18px; /* Increases the base font-size across the app */
   }
@@ -25,3 +26,5 @@ html {
   p, span, li {
     font-size: 1.125rem; /* approx 20.25px */
   }
+=======
+>>>>>>> b6f3ed2 (initial commit)
