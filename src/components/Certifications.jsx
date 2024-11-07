@@ -5,6 +5,7 @@ export default function Certifications() {
   return (
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 54a4e1c (fix: update id of every section)
     <section id="certifications" className="container mx-auto px-4 py-16">
@@ -83,6 +84,39 @@ export default function Certifications() {
           </div>
         </div>
 <<<<<<< HEAD
+=======
+    <section className="container mx-auto px-4 py-16">
+      <h2 className="text-3xl font-bold text-center mb-12">Certifications & Training</h2>
+      <div className="max-w-3xl mx-auto space-y-6">
+        <div className="bg-slate-800/50 p-6 rounded-xl">
+          <div className="flex items-start gap-4">
+            <Award className="text-blue-400 flex-shrink-0" size={24} />
+            <div>
+              <h3 className="text-xl font-semibold">Cypress Modern Web Automation Testing</h3>
+              <p className="text-slate-300">Udemy (In Progress)</p>
+              <ul className="mt-2 space-y-1 text-slate-300">
+                <li>• End-to-end testing with Cypress</li>
+                <li>• JavaScript automation frameworks</li>
+                <li>• Test automation best practices</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="bg-slate-800/50 p-6 rounded-xl">
+          <div className="flex items-start gap-4">
+            <BookOpen className="text-blue-400 flex-shrink-0" size={24} />
+            <div>
+              <h3 className="text-xl font-semibold">API Testing Masterclass</h3>
+              <p className="text-slate-300">Postman (In Progress)</p>
+              <ul className="mt-2 space-y-1 text-slate-300">
+                <li>• RESTful API testing fundamentals</li>
+                <li>• API automation with Postman</li>
+                <li>• Test collection management</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+>>>>>>> b6f3ed2 (initial commit)
         <div className="bg-slate-800/50 p-6 rounded-xl">
           <div className="flex items-start gap-4">
             <GraduationCap className="text-blue-400 flex-shrink-0" size={24} />
@@ -95,6 +129,7 @@ export default function Certifications() {
                 <li>• Quality assurance best practices</li>
               </ul>
             </div>
+<<<<<<< HEAD
 >>>>>>> b6f3ed2 (initial commit)
 =======
         <div className="bg-white dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 shadow-md hover:bg-slate-50 dark:hover:bg-slate-800/60 transition-colors flex items-start gap-4">
@@ -110,6 +145,8 @@ export default function Certifications() {
               <li>• Quality assurance best practices</li>
             </ul>
 >>>>>>> 451c72e (fix: light bg issues)
+=======
+>>>>>>> b6f3ed2 (initial commit)
           </div>
         </div>
       </div>

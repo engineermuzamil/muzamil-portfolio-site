@@ -5,6 +5,7 @@ export default function ResearchInterests() {
   return (
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <section id="research-interests" className="container mx-auto px-4 py-16">
 =======
     <section className="container mx-auto px-4 py-16">
@@ -12,6 +13,9 @@ export default function ResearchInterests() {
 =======
     <section id="research-interests" className="container mx-auto px-4 py-16">
 >>>>>>> 54a4e1c (fix: update id of every section)
+=======
+    <section className="container mx-auto px-4 py-16">
+>>>>>>> b6f3ed2 (initial commit)
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold mb-4 text-slate-800 dark:text-white">Research & Professional Interests</h2>
         <p className="text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">

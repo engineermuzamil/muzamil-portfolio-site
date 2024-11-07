@@ -18,6 +18,7 @@ export default function Competencies() {
   return (
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 54a4e1c (fix: update id of every section)
     <section id="competencies" className="container mx-auto px-4 py-16">
@@ -55,6 +56,19 @@ export default function Competencies() {
               <h3 className="text-lg font-semibold mb-2 text-slate-800 dark:text-white">{competency.title}</h3>
               <p className="text-slate-600 dark:text-slate-300 text-sm">{competency.description}</p>
 >>>>>>> 451c72e (fix: light bg issues)
+=======
+    <section className="container mx-auto px-4 py-16">
+      <h2 className="text-3xl font-bold text-center mb-12">Core Competencies</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        {competencies.map((competency, index) => (
+          <div key={index} className="bg-slate-800/50 p-6 rounded-xl flex items-start gap-4 hover:bg-slate-700/50 transition-colors">
+            <div className="text-blue-400 flex-shrink-0">
+              {competency.icon}
+            </div>
+            <div>
+              <h3 className="text-lg font-semibold mb-2">{competency.title}</h3>
+              <p className="text-slate-300 text-sm">{competency.description}</p>
+>>>>>>> b6f3ed2 (initial commit)
             </div>
           </div>
         ))}

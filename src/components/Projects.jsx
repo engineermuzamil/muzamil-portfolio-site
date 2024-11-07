@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import React from 'react';
 import { Github, Link } from 'lucide-react';
 
@@ -59,6 +60,8 @@ const Projects = () => {
   return (
     <section id="projects" className="container mx-auto px-4 py-16">
 =======
+=======
+>>>>>>> b6f3ed2 (initial commit)
 // import React from 'react';
 // import { Github, Link } from 'lucide-react'; 
 
@@ -110,6 +113,7 @@ const Projects = () => {
 // };
 
 // export default Projects;
+<<<<<<< HEAD
 =======
 >>>>>>> 451c72e (fix: light bg issues)
 import React from 'react';
@@ -175,6 +179,14 @@ const Projects = () => {
 =======
     <section id="projects" className="container mx-auto px-4 py-16">
 >>>>>>> 54a4e1c (fix: update id of every section)
+=======
+import React from 'react';
+import { Github, Link } from 'lucide-react'; 
+
+const Projects = () => {
+  return (
+    <section className="container mx-auto px-4 py-16">
+>>>>>>> b6f3ed2 (initial commit)
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold mb-4 text-slate-800 dark:text-white">Projects</h2>
         <p className="text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
@@ -183,6 +195,7 @@ const Projects = () => {
       </div>
 
       <div className="max-w-3xl mx-auto space-y-8">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -198,6 +211,8 @@ const Projects = () => {
         />
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> b6f3ed2 (initial commit)
         {/* Project Card */}
         <div className="bg-white dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800/60 transition-colors">
           <div className="flex items-start gap-4">
@@ -229,9 +244,12 @@ const Projects = () => {
             </div>
           </div>
         </div>
+<<<<<<< HEAD
 >>>>>>> b6f3ed2 (initial commit)
 =======
 >>>>>>> 451c72e (fix: light bg issues)
+=======
+>>>>>>> b6f3ed2 (initial commit)
       </div>
     </section>
   );
