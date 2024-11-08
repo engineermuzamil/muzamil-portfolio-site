@@ -25,7 +25,7 @@ import Footer from './components/Footer';
 import { ThemeProvider } from './context/ThemeContext';
 
 function App() {
-  const profileImage = "https://gitlab.com/engineermuzamil/barebone-system/-/raw/master/src/assets/mypic.PNG?ref_type=heads";
+  const profileImage = "https://imgur.com/a/C9GYhI9";
 
   return (
     <ThemeProvider>
