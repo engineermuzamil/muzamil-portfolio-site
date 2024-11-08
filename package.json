@@ -13,11 +13,16 @@
     "lucide-react": "^0.454.0",
     "react": "^18.3.1",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "react-dom": "^18.3.1",
     "react-scroll": "^1.9.0"
 =======
     "react-dom": "^18.3.1"
 >>>>>>> b6f3ed2 (initial commit)
+=======
+    "react-dom": "^18.3.1",
+    "react-scroll": "^1.9.0"
+>>>>>>> 7435920 (wip: fix navbar but still needs sections order to be fixed and mobile menu)
   },
   "devDependencies": {
     "@eslint/js": "^9.13.0",
