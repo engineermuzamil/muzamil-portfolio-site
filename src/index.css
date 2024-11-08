@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html {
+    font-size: 18px; /* Increases the base font-size across the app */
+  }
+  * {
+    box-sizing: border-box;
+  }
+  html, body {
+    overflow-x: hidden;
+  }
+  
+  body {
+    font-size: 1rem; /* Use rem units for components for scalable typography */
+  }
+  h1 {
+    font-size: 2.25rem; /* approx 40.5px */
+  }
+  
+  h2 {
+    font-size: 1.75rem; /* approx 31.5px */
+  }
+  
+  p, span, li {
+    font-size: 1.125rem; /* approx 20.25px */
+  }
