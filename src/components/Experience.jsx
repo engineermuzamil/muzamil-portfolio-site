@@ -4,6 +4,9 @@ import { Building2, Globe } from 'lucide-react';
 export default function Experience() {
   return (
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 54a4e1c (fix: update id of every section)
     <section id="experience" className="container mx-auto px-4 py-16">
       <h2 className="text-3xl font-bold text-center mb-12 text-slate-800 dark:text-white">
         Professional Experience

@@ -4,6 +4,9 @@ import { Mail, MapPin, Phone, Calendar } from 'lucide-react';
 export default function Contact() {
   return (
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 54a4e1c (fix: update id of every section)
     <section id="contact" className="container mx-auto px-4 py-16">
       <h2 className="text-3xl font-bold text-center mb-12 text-slate-800 dark:text-white">Get in Touch</h2>
       <div className="max-w-4xl mx-auto bg-white dark:bg-slate-800/50 rounded-xl p-8 shadow-md">

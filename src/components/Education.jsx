@@ -4,6 +4,9 @@ import { GraduationCap, Award } from 'lucide-react';
 export default function Education() {
   return (
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 54a4e1c (fix: update id of every section)
     <section id="education" className="container mx-auto px-4 py-16">
       <h2 className="text-3xl font-bold text-center mb-12 text-slate-800 dark:text-white">Education</h2>
       <div className="max-w-3xl mx-auto space-y-8">
