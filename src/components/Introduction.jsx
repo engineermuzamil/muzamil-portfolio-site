@@ -3,6 +3,7 @@ import { TestTube2, Mail, Github, Linkedin } from 'lucide-react';
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 export default function Introduction({ profileImage }) {
   return (
@@ -35,6 +36,12 @@ export default function Introduction({ profileImage }) {
 >>>>>>> 976b262 (fix: icons sizes in intro section and responsiveness)
 =======
 >>>>>>> 6cf278c (wip: add navbar but fix it)
+=======
+
+export default function Introduction({ profileImage }) {
+  return (
+    <section className="container mx-auto px-4 mt-16 py-16 flex flex-col items-center text-center relative">
+>>>>>>> 7435920 (wip: fix navbar but still needs sections order to be fixed and mobile menu)
       <div className="w-32 h-32 rounded-full bg-blue-100 dark:bg-blue-500/10 flex items-center justify-center mb-8 overflow-hidden">
         {profileImage ? (
           <img 
