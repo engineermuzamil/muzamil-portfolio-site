@@ -1,23 +1,9 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 0b99632 (fix: update id of every section)
-=======
->>>>>>> d70ea79 (fix: bring back toggle button)
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
 import { Sun, Moon } from 'lucide-react';
 
 const Navbar = () => {
-  const logoImage = "https://gitlab.com/engineermuzamil/barebone-system/-/raw/master/src/assets/mypic.PNG?ref_type=heads";
+  const logoImage = "https://imgur.com/a/C9GYhI9";
 
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [theme, setTheme] = useState('light');
