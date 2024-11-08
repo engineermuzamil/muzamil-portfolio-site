@@ -244,15 +244,15 @@ const Navbar = () => {
 
         {/* Desktop Links */}
         <div className="hidden md:flex space-x-8"> {/* Increased space between links */}
-          <NavLink label="Introduction" to="introduction" />
-          <NavLink label="Projects" to="projects" />
-          <NavLink label="Certifications" to="certifications" />
-          <NavLink label="AI Tools" to="ai-tools" />
-          <NavLink label="Competencies" to="competencies" />
-          <NavLink label="Education" to="education" />
+        <NavLink label="Introduction" to="introduction" />
           <NavLink label="Experience" to="experience" />
-          <NavLink label="Research Interests" to="research-interests" />
+          <NavLink label="Projects" to="projects" />
+          <NavLink label="Education" to="education" />
           <NavLink label="Skills" to="skills" />
+          <NavLink label="Certifications" to="certifications" />
+          <NavLink label="Competencies" to="competencies" />
+          <NavLink label="Research Interests" to="research-interests" />
+          <NavLink label="AI Tools" to="ai-tools" />
           <NavLink label="Contact" to="contact" />
           <NavLink label="Thank You" to="thank-you" />
         </div>
@@ -281,17 +281,17 @@ const Navbar = () => {
       {/* Mobile Menu Links */}
       {isMobileMenuOpen && (
         <div className="md:hidden mt-4 flex flex-col bg-slate-800 space-y-4 p-4 rounded-lg">
-          <NavLink label="Introduction" to="introduction" closeMenu={toggleMobileMenu} />
-          <NavLink label="Projects" to="projects" closeMenu={toggleMobileMenu} />
-          <NavLink label="Certifications" to="certifications" closeMenu={toggleMobileMenu} />
-          <NavLink label="AI Tools" to="ai-tools" closeMenu={toggleMobileMenu} />
-          <NavLink label="Competencies" to="competencies" closeMenu={toggleMobileMenu} />
-          <NavLink label="Education" to="education" closeMenu={toggleMobileMenu} />
-          <NavLink label="Experience" to="experience" closeMenu={toggleMobileMenu} />
-          <NavLink label="Research Interests" to="research-interests" closeMenu={toggleMobileMenu} />
-          <NavLink label="Skills" to="skills" closeMenu={toggleMobileMenu} />
-          <NavLink label="Contact" to="contact" closeMenu={toggleMobileMenu} />
-          <NavLink label="Thank You" to="thank-you" closeMenu={toggleMobileMenu} />
+           <NavLink label="Introduction" to="introduction" closeMenu={toggleMobileMenu} />
+            <NavLink label="Experience" to="experience" closeMenu={toggleMobileMenu} />
+            <NavLink label="Projects" to="projects" closeMenu={toggleMobileMenu} />
+            <NavLink label="Education" to="education" closeMenu={toggleMobileMenu} />
+            <NavLink label="Skills" to="skills" closeMenu={toggleMobileMenu} />
+            <NavLink label="Certifications" to="certifications" closeMenu={toggleMobileMenu} />
+            <NavLink label="Competencies" to="competencies" closeMenu={toggleMobileMenu} />
+            <NavLink label="Research Interests" to="research-interests" closeMenu={toggleMobileMenu} />
+            <NavLink label="AI Tools" to="ai-tools" closeMenu={toggleMobileMenu} />
+            <NavLink label="Contact" to="contact" closeMenu={toggleMobileMenu} />
+            <NavLink label="Thank You" to="thank-you" closeMenu={toggleMobileMenu} />
         </div>
       )}
     </nav>
