@@ -16,23 +16,12 @@ export default function Competencies() {
   ];
 
   return (
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 54a4e1c (fix: update id of every section)
-=======
->>>>>>> 0b99632 (fix: update id of every section)
-=======
->>>>>>> 54a4e1c (fix: update id of every section)
     <section id="competencies" className="container mx-auto px-4 py-16">
       <h2 className="text-3xl font-bold text-center mb-12 text-slate-800 dark:text-white">Core Competencies</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
         {competencies.map((competency, index) => (
-          <div 
-            key={index} 
+          <div
+            key={index}
             className="bg-white dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800/60 transition-colors flex items-start gap-4"
           >
             <div className="text-blue-600 dark:text-blue-400 flex-shrink-0">
@@ -41,48 +30,6 @@ export default function Competencies() {
             <div>
               <h3 className="text-lg font-semibold mb-2 text-slate-800 dark:text-white">{competency.title}</h3>
               <p className="text-slate-600 dark:text-slate-300 text-sm">{competency.description}</p>
-=======
-    <section className="container mx-auto px-4 py-16">
-      <h2 className="text-3xl font-bold text-center mb-12 text-slate-800 dark:text-white">Core Competencies</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-        {competencies.map((competency, index) => (
-          <div 
-            key={index} 
-            className="bg-white dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800/60 transition-colors flex items-start gap-4"
-          >
-            <div className="text-blue-600 dark:text-blue-400 flex-shrink-0">
-              {competency.icon}
-            </div>
-            <div>
-<<<<<<< HEAD
-              <h3 className="text-lg font-semibold mb-2">{competency.title}</h3>
-              <p className="text-slate-300 text-sm">{competency.description}</p>
->>>>>>> b6f3ed2 (initial commit)
-=======
-              <h3 className="text-lg font-semibold mb-2 text-slate-800 dark:text-white">{competency.title}</h3>
-              <p className="text-slate-600 dark:text-slate-300 text-sm">{competency.description}</p>
->>>>>>> 451c72e (fix: light bg issues)
-=======
-    <section className="container mx-auto px-4 py-16">
-      <h2 className="text-3xl font-bold text-center mb-12 text-slate-800 dark:text-white">Core Competencies</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-        {competencies.map((competency, index) => (
-          <div 
-            key={index} 
-            className="bg-white dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800/60 transition-colors flex items-start gap-4"
-          >
-            <div className="text-blue-600 dark:text-blue-400 flex-shrink-0">
-              {competency.icon}
-            </div>
-            <div>
-<<<<<<< HEAD
-              <h3 className="text-lg font-semibold mb-2">{competency.title}</h3>
-              <p className="text-slate-300 text-sm">{competency.description}</p>
->>>>>>> b6f3ed2 (initial commit)
-=======
-              <h3 className="text-lg font-semibold mb-2 text-slate-800 dark:text-white">{competency.title}</h3>
-              <p className="text-slate-600 dark:text-slate-300 text-sm">{competency.description}</p>
->>>>>>> 451c72e (fix: light bg issues)
             </div>
           </div>
         ))}

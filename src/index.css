@@ -1,59 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 html {
-    font-size: 18px; /* Increases the base font-size across the app */
-  }
-  * {
-    box-sizing: border-box;
-  }
-  html, body {
-    overflow-x: hidden;
-  }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-html {
-    font-size: 18px; /* Increases the base font-size across the app */
-  }
->>>>>>> 451c72e (fix: light bg issues)
-=======
->>>>>>> 976b262 (fix: icons sizes in intro section and responsiveness)
-=======
-html {
-    font-size: 18px; /* Increases the base font-size across the app */
-  }
->>>>>>> 451c72e (fix: light bg issues)
-=======
->>>>>>> 976b262 (fix: icons sizes in intro section and responsiveness)
-  
-  body {
-    font-size: 1rem; /* Use rem units for components for scalable typography */
-  }
-  h1 {
-    font-size: 2.25rem; /* approx 40.5px */
-  }
-  
-  h2 {
-    font-size: 1.75rem; /* approx 31.5px */
-  }
-  
-  p, span, li {
-    font-size: 1.125rem; /* approx 20.25px */
-<<<<<<< HEAD
-<<<<<<< HEAD
-  }
-=======
->>>>>>> b6f3ed2 (initial commit)
-=======
-  }
->>>>>>> 451c72e (fix: light bg issues)
-=======
->>>>>>> b6f3ed2 (initial commit)
-=======
-  }
->>>>>>> 451c72e (fix: light bg issues)
+  font-size: 18px;
+  /* Increases the base font-size across the app */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-size: 1rem;
+  /* Use rem units for components for scalable typography */
+}
+
+h1 {
+  font-size: 2.25rem;
+  /* approx 40.5px */
+}
+
+h2 {
+  font-size: 1.75rem;
+  /* approx 31.5px */
+}
+
+p,
+span,
+li {
+  font-size: 1.125rem;
+  /* approx 20.25px */
+}
