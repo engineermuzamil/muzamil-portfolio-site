@@ -9,6 +9,7 @@ export default function Introduction({ profileImage }) {
       id="introduction" 
       className="w-full max-w-screen-md px-4 mt-16 py-16 flex flex-col items-center text-center relative mx-auto"
     >
+<<<<<<< HEAD
 =======
 import { useTheme } from '../context/ThemeContext';
 
@@ -26,6 +27,8 @@ export default function Introduction({ profileImage }) {
 =======
     <section id="introduction" className="container mx-auto px-4 mt-16 py-16 flex flex-col items-center text-center relative">
 >>>>>>> 54a4e1c (fix: update id of every section)
+=======
+>>>>>>> 976b262 (fix: icons sizes in intro section and responsiveness)
       <div className="w-32 h-32 rounded-full bg-blue-100 dark:bg-blue-500/10 flex items-center justify-center mb-8 overflow-hidden">
         {profileImage ? (
           <img 
@@ -48,6 +51,7 @@ export default function Introduction({ profileImage }) {
       <div className="flex gap-4 mb-8">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <a href="mailto:muhammadmuzamilhussain5@gmail.com" className="bg-blue-500 hover:bg-blue-600 transition px-6 py-1  rounded-full flex items-center gap-2 text-white">
           <Mail size={18} />
           Contact Me
@@ -62,19 +66,26 @@ export default function Introduction({ profileImage }) {
 =======
         <a href="mailto:muhammadmuzamilhussain5@gmail.com" className="bg-blue-500 hover:bg-blue-600 transition px-4 py-2 rounded-full flex items-center gap-2 text-white">
 >>>>>>> 45b1baa (fix: bring back toggle button)
+=======
+        <a href="mailto:muhammadmuzamilhussain5@gmail.com" className="bg-blue-500 hover:bg-blue-600 transition px-6 py-1  rounded-full flex items-center gap-2 text-white">
+>>>>>>> 976b262 (fix: icons sizes in intro section and responsiveness)
           <Mail size={18} />
           Contact Me
         </a>
-        <a href="https://www.linkedin.com/in/muhammadmuzamilhussain/" target="_blank" rel="noopener noreferrer" className="bg-slate-200 hover:bg-slate-300 dark:bg-slate-700 dark:hover:bg-slate-600 transition px-4 py-2 rounded-full flex items-center gap-2 text-slate-800 dark:text-white">
+        <a href="https://www.linkedin.com/in/muhammadmuzamilhussain/" target="_blank" rel="noopener noreferrer" className="bg-slate-200 hover:bg-slate-300 dark:bg-slate-700 dark:hover:bg-slate-600 transition px-3 py-1 rounded-full flex items-center gap-2 text-slate-800 dark:text-white">
           <Linkedin size={18} />
           Linkedin
         </a>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <a href="https://github.com/muzamilmemon1" target="_blank" rel="noopener noreferrer" className="bg-slate-200 hover:bg-slate-300 dark:bg-slate-700 dark:hover:bg-slate-600 transition px-6 py-2 rounded-full flex items-center gap-2 text-slate-800 dark:text-white">
 >>>>>>> 6cf278c (wip: add navbar but fix it)
 =======
         <a href="https://github.com/muzamilmemon1" target="_blank" rel="noopener noreferrer" className="bg-slate-200 hover:bg-slate-300 dark:bg-slate-700 dark:hover:bg-slate-600 transition px-4 py-2 rounded-full flex items-center gap-2 text-slate-800 dark:text-white">
 >>>>>>> 45b1baa (fix: bring back toggle button)
+=======
+        <a href="https://github.com/muzamilmemon1" target="_blank" rel="noopener noreferrer" className="bg-slate-200 hover:bg-slate-300 dark:bg-slate-700 dark:hover:bg-slate-600 transition px-3 py-1 rounded-full flex items-center gap-2 text-slate-800 dark:text-white">
+>>>>>>> 976b262 (fix: icons sizes in intro section and responsiveness)
           <Github size={18} />
           GitHub
         </a>

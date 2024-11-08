@@ -12,11 +12,14 @@ html {
   html, body {
     overflow-x: hidden;
   }
+<<<<<<< HEAD
 =======
 html {
     font-size: 18px; /* Increases the base font-size across the app */
   }
 >>>>>>> 451c72e (fix: light bg issues)
+=======
+>>>>>>> 976b262 (fix: icons sizes in intro section and responsiveness)
   
   body {
     font-size: 1rem; /* Use rem units for components for scalable typography */
