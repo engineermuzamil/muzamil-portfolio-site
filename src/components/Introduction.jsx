@@ -70,6 +70,7 @@ export default function Introduction({ profileImage }) {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <a href="mailto:muhammadmuzamilhussain5@gmail.com" className="bg-blue-500 hover:bg-blue-600 transition px-6 py-1  rounded-full flex items-center gap-2 text-white">
           <Mail size={18} />
           Contact Me
@@ -106,15 +107,22 @@ export default function Introduction({ profileImage }) {
 >>>>>>> 976b262 (fix: icons sizes in intro section and responsiveness)
 =======
         <a href="mailto:muhammadmuzamilhussain5@gmail.com" className="bg-blue-500 hover:bg-blue-600 transition px-6 py-2 rounded-full flex items-center gap-2 text-white">
+=======
+        <a href="mailto:muhammadmuzamilhussain5@gmail.com" className="bg-blue-500 hover:bg-blue-600 transition px-4 py-2 rounded-full flex items-center gap-2 text-white">
+>>>>>>> 45b1baa (fix: bring back toggle button)
           <Mail size={18} />
           Contact Me
         </a>
-        <a href="https://www.linkedin.com/in/muhammadmuzamilhussain/" target="_blank" rel="noopener noreferrer" className="bg-slate-200 hover:bg-slate-300 dark:bg-slate-700 dark:hover:bg-slate-600 transition px-6 py-2 rounded-full flex items-center gap-2 text-slate-800 dark:text-white">
+        <a href="https://www.linkedin.com/in/muhammadmuzamilhussain/" target="_blank" rel="noopener noreferrer" className="bg-slate-200 hover:bg-slate-300 dark:bg-slate-700 dark:hover:bg-slate-600 transition px-4 py-2 rounded-full flex items-center gap-2 text-slate-800 dark:text-white">
           <Linkedin size={18} />
           Linkedin
         </a>
+<<<<<<< HEAD
         <a href="https://github.com/muzamilmemon1" target="_blank" rel="noopener noreferrer" className="bg-slate-200 hover:bg-slate-300 dark:bg-slate-700 dark:hover:bg-slate-600 transition px-6 py-2 rounded-full flex items-center gap-2 text-slate-800 dark:text-white">
 >>>>>>> 6cf278c (wip: add navbar but fix it)
+=======
+        <a href="https://github.com/muzamilmemon1" target="_blank" rel="noopener noreferrer" className="bg-slate-200 hover:bg-slate-300 dark:bg-slate-700 dark:hover:bg-slate-600 transition px-4 py-2 rounded-full flex items-center gap-2 text-slate-800 dark:text-white">
+>>>>>>> 45b1baa (fix: bring back toggle button)
           <Github size={18} />
           GitHub
         </a>
