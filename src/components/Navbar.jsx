@@ -7,8 +7,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 0b99632 (fix: update id of every section)
+=======
+>>>>>>> d70ea79 (fix: bring back toggle button)
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
 import { Sun, Moon } from 'lucide-react';
@@ -241,13 +244,15 @@ import { Link } from 'react-scroll';
 import { Sun, Moon } from 'lucide-react';
 
 const Navbar = () => {
-
   const logoImage = "https://gitlab.com/engineermuzamil/barebone-system/-/raw/master/src/assets/mypic.PNG?ref_type=heads";
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 
 >>>>>>> 0b99632 (fix: update id of every section)
+=======
+>>>>>>> d70ea79 (fix: bring back toggle button)
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [theme, setTheme] = useState('light');
 
@@ -290,10 +295,13 @@ const Navbar = () => {
           <NavLink label="Research Interests" to="research-interests" />
           <NavLink label="Skills" to="skills" />
           <NavLink label="Contact" to="contact" />
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
           {/* <NavLink label="Thank You" to="thank-you" /> */}
 >>>>>>> 0b99632 (fix: update id of every section)
+=======
+>>>>>>> d70ea79 (fix: bring back toggle button)
         </div>
 
         {/* Mobile Menu Button */}
@@ -331,14 +339,23 @@ const Navbar = () => {
       {/* Mobile Menu Links */}
       {isMobileMenuOpen && (
 <<<<<<< HEAD
+<<<<<<< HEAD
         <div className={`md:hidden mt-4 space-y-4 transition-colors ${theme === 'dark' ? 'bg-slate-900 text-white' : 'bg-white text-slate-800'}`}>
 =======
+=======
+>>>>>>> d70ea79 (fix: bring back toggle button)
 <<<<<<< HEAD
         <div className="md:hidden mt-4 flex flex-col bg-slate-800 space-y-4 p-4 rounded-lg">
 =======
         <div className="md:hidden mt-4 space-y-4">
 >>>>>>> 9ca0530 (fix: update id of every section)
+<<<<<<< HEAD
 >>>>>>> 0b99632 (fix: update id of every section)
+=======
+=======
+        <div className={`md:hidden mt-4 space-y-4 transition-colors ${theme === 'dark' ? 'bg-slate-900 text-white' : 'bg-white text-slate-800'}`}>
+>>>>>>> 7140739 (fix: bring back toggle button)
+>>>>>>> d70ea79 (fix: bring back toggle button)
           <NavLink label="Introduction" to="introduction" closeMenu={toggleMobileMenu} />
           <NavLink label="Projects" to="projects" closeMenu={toggleMobileMenu} />
           <NavLink label="Certifications" to="certifications" closeMenu={toggleMobileMenu} />
@@ -350,13 +367,21 @@ const Navbar = () => {
           <NavLink label="Skills" to="skills" closeMenu={toggleMobileMenu} />
           <NavLink label="Contact" to="contact" closeMenu={toggleMobileMenu} />
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> d70ea79 (fix: bring back toggle button)
 <<<<<<< HEAD
           <NavLink label="Thank You" to="thank-you" closeMenu={toggleMobileMenu} />
 =======
           {/* <NavLink label="Thank You" to="thank-you" closeMenu={toggleMobileMenu} /> */}
 >>>>>>> 9ca0530 (fix: update id of every section)
+<<<<<<< HEAD
 >>>>>>> 0b99632 (fix: update id of every section)
+=======
+=======
+>>>>>>> 7140739 (fix: bring back toggle button)
+>>>>>>> d70ea79 (fix: bring back toggle button)
         </div>
       )}
     </nav>
@@ -378,6 +403,7 @@ const NavLink = ({ label, to, closeMenu }) => (
     activeClass="text-blue-500"
     spy={true}
     onClick={closeMenu}
+<<<<<<< HEAD
   >
     {label}
   </Link>
@@ -626,6 +652,8 @@ const NavLink = ({ label, to, closeMenu }) => (
     activeClass="text-blue-500"
     spy={true}
     onClick={closeMenu}
+=======
+>>>>>>> d70ea79 (fix: bring back toggle button)
   >
     {label}
   </Link>
