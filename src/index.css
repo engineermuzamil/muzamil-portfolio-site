@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 html {
     font-size: 18px; /* Increases the base font-size across the app */
   }
@@ -21,6 +22,11 @@ html {
 >>>>>>> 451c72e (fix: light bg issues)
 =======
 >>>>>>> 976b262 (fix: icons sizes in intro section and responsiveness)
+=======
+html {
+    font-size: 18px; /* Increases the base font-size across the app */
+  }
+>>>>>>> 451c72e (fix: light bg issues)
   
   body {
     font-size: 1rem; /* Use rem units for components for scalable typography */
@@ -36,6 +42,7 @@ html {
   p, span, li {
     font-size: 1.125rem; /* approx 20.25px */
 <<<<<<< HEAD
+<<<<<<< HEAD
   }
 =======
 >>>>>>> b6f3ed2 (initial commit)
@@ -44,3 +51,6 @@ html {
 >>>>>>> 451c72e (fix: light bg issues)
 =======
 >>>>>>> b6f3ed2 (initial commit)
+=======
+  }
+>>>>>>> 451c72e (fix: light bg issues)
