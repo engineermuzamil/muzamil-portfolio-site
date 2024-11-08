@@ -3,6 +3,7 @@ import ThemeToggle from './components/ThemeToggle';
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import Header from './components/Navbar';
 import Introduction from './components/Introduction';
 =======
@@ -15,6 +16,10 @@ import Introduction from './components/Introduction';
 =======
 import Header from './components/Header';
 >>>>>>> b6f3ed2 (initial commit)
+=======
+import Header from './components/Navbar';
+import Introduction from './components/Introduction';
+>>>>>>> 6cf278c (wip: add navbar but fix it)
 import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Education from './components/Education';
@@ -42,6 +47,7 @@ function App() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
        
         <Header />
         <Introduction profileImage={profileImage} />
@@ -56,6 +62,11 @@ function App() {
 =======
         <Header profileImage={profileImage} />
 >>>>>>> b6f3ed2 (initial commit)
+=======
+       
+        <Header />
+        <Introduction profileImage={profileImage} />
+>>>>>>> 6cf278c (wip: add navbar but fix it)
         <Experience />
         <Projects />
         <Education />
