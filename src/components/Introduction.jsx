@@ -40,8 +40,12 @@ export default function Introduction({ profileImage }) {
 
 export default function Introduction({ profileImage }) {
   return (
+<<<<<<< HEAD
     <section className="container mx-auto px-4 mt-16 py-16 flex flex-col items-center text-center relative">
 >>>>>>> 7435920 (wip: fix navbar but still needs sections order to be fixed and mobile menu)
+=======
+    <section id="introduction" className="container mx-auto px-4 mt-16 py-16 flex flex-col items-center text-center relative">
+>>>>>>> 54a4e1c (fix: update id of every section)
       <div className="w-32 h-32 rounded-full bg-blue-100 dark:bg-blue-500/10 flex items-center justify-center mb-8 overflow-hidden">
         {profileImage ? (
           <img 

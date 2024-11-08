@@ -6,6 +6,9 @@ export default function Certifications() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 54a4e1c (fix: update id of every section)
 =======
 >>>>>>> 54a4e1c (fix: update id of every section)
     <section id="certifications" className="container mx-auto px-4 py-16">
