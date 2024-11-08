@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
 import { Sun, Moon } from 'lucide-react';
@@ -226,21 +227,38 @@ import { useTheme } from '../context/ThemeContext';
 =======
 >>>>>>> 54a4e1c (fix: update id of every section)
 import React, { useState } from 'react';
+=======
+import React, { useState, useEffect } from 'react';
+>>>>>>> 45b1baa (fix: bring back toggle button)
 import { Link } from 'react-scroll';
+import { Sun, Moon } from 'lucide-react';
 
 const Navbar = () => {
-
   const logoImage = "https://gitlab.com/engineermuzamil/barebone-system/-/raw/master/src/assets/mypic.PNG?ref_type=heads";
 
-
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [theme, setTheme] = useState('light');
+
+  useEffect(() => {
+    // Apply the initial theme based on the system or saved preference
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    setTheme(savedTheme);
+    document.documentElement.classList.toggle('dark', savedTheme === 'dark');
+  }, []);
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  const toggleTheme = () => {
+    const newTheme = theme === 'light' ? 'dark' : 'light';
+    setTheme(newTheme);
+    document.documentElement.classList.toggle('dark', newTheme === 'dark');
+    localStorage.setItem('theme', newTheme);
+  };
+
   return (
-    <nav className="bg-slate-800 text-white py-4 px-8 fixed top-0 w-full z-50 shadow-md">
+    <nav className={`py-4 px-8 fixed top-0 w-full z-50 shadow-md transition-colors duration-300 ${theme === 'dark' ? 'bg-slate-900 text-white' : 'bg-white text-slate-800'}`}>
       <div className="flex items-center justify-between">
         {/* Logo and Name */}
         <div className="flex items-center space-x-3">
@@ -249,7 +267,7 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Links */}
-        <div className="hidden md:flex space-x-8"> {/* Increased space between links */}
+        <div className="hidden md:flex space-x-8">
           <NavLink label="Introduction" to="introduction" />
           <NavLink label="Projects" to="projects" />
           <NavLink label="Certifications" to="certifications" />
@@ -260,7 +278,6 @@ const Navbar = () => {
           <NavLink label="Research Interests" to="research-interests" />
           <NavLink label="Skills" to="skills" />
           <NavLink label="Contact" to="contact" />
-          {/* <NavLink label="Thank You" to="thank-you" /> */}
         </div>
 
         {/* Mobile Menu Button */}
@@ -282,11 +299,22 @@ const Navbar = () => {
             </svg>
           </button>
         </div>
+
+        {/* Theme Toggle Icon */}
+        <div className="hidden md:flex items-center ml-4">
+          <button
+            onClick={toggleTheme}
+            className={`p-2 rounded-full transition-colors ${theme === 'dark' ? 'bg-slate-800 text-slate-200' : 'bg-slate-100 text-slate-800'}`}
+            aria-label="Toggle theme"
+          >
+            {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile Menu Links */}
       {isMobileMenuOpen && (
-        <div className="md:hidden mt-4 space-y-4">
+        <div className={`md:hidden mt-4 space-y-4 transition-colors ${theme === 'dark' ? 'bg-slate-900 text-white' : 'bg-white text-slate-800'}`}>
           <NavLink label="Introduction" to="introduction" closeMenu={toggleMobileMenu} />
           <NavLink label="Projects" to="projects" closeMenu={toggleMobileMenu} />
           <NavLink label="Certifications" to="certifications" closeMenu={toggleMobileMenu} />
@@ -297,7 +325,6 @@ const Navbar = () => {
           <NavLink label="Research Interests" to="research-interests" closeMenu={toggleMobileMenu} />
           <NavLink label="Skills" to="skills" closeMenu={toggleMobileMenu} />
           <NavLink label="Contact" to="contact" closeMenu={toggleMobileMenu} />
-          {/* <NavLink label="Thank You" to="thank-you" closeMenu={toggleMobileMenu} /> */}
         </div>
       )}
     </nav>
@@ -314,11 +341,11 @@ const NavLink = ({ label, to, closeMenu }) => (
     to={to}
     smooth={true}
     duration={500}
-    offset={-70} // Adjust offset based on header height
+    offset={-70}
     className="block cursor-pointer hover:text-blue-500"
     activeClass="text-blue-500"
     spy={true}
-    onClick={closeMenu} // Close menu on click in mobile view
+    onClick={closeMenu}
   >
     {label}
   </Link>
