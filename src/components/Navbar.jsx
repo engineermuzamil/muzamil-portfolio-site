@@ -34,42 +34,20 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Links */}
-        <div className="hidden md:flex space-x-8">
-          <NavLink label="Introduction" to="introduction" />
-          <NavLink label="Experience" to="experience" />
-          <NavLink label="Projects" to="projects" />
-          <NavLink label="Education" to="education" />
-          <NavLink label="Skills" to="skills" />
-          <NavLink label="Certifications" to="certifications" />
-          <NavLink label="Competencies" to="competencies" />
-          <NavLink label="Research Interests" to="research-interests" />
-          <NavLink label="AI Tools" to="ai-tools" />
-          <NavLink label="Contact" to="contact" />
-          {/* <NavLink label="Thank You" to="thank-you" /> */}
+        <div className="hidden md:flex flex-grow justify-center">
+          <ul className="flex space-x-8">
+            <NavLink label="Introduction" to="introduction" />
+            <NavLink label="Experience" to="experience" />
+            <NavLink label="Projects" to="projects" />
+            <NavLink label="Education" to="education" />
+            <NavLink label="Skills" to="skills" />
+            <NavLink label="Certifications" to="certifications" />
+            <NavLink label="Competencies" to="competencies" />
+          </ul>
         </div>
 
-        {/* Mobile Menu Button */}
-        <div className="md:hidden">
-          <button onClick={toggleMobileMenu} className="focus:outline-none">
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d={isMobileMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
-              ></path>
-            </svg>
-          </button>
-        </div>
-
-        {/* Theme Toggle Icon */}
-        <div className="hidden md:flex items-center ml-4">
+        {/* Theme Toggle Button in Desktop Menu */}
+        <div className="hidden md:flex">
           <button
             onClick={toggleTheme}
             className={`p-2 rounded-full transition-colors ${theme === 'dark' ? 'bg-slate-800 text-slate-200' : 'bg-slate-100 text-slate-800'}`}
@@ -80,9 +58,9 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu Links */}
+      {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className={`md:hidden mt-4 space-y-4 transition-colors ${theme === 'dark' ? 'bg-slate-900 text-white' : 'bg-white text-slate-800'}`}>
+        <div className="md:hidden flex flex-col space-y-4">
           <NavLink label="Introduction" to="introduction" closeMenu={toggleMobileMenu} />
           <NavLink label="Experience" to="experience" closeMenu={toggleMobileMenu} />
           <NavLink label="Projects" to="projects" closeMenu={toggleMobileMenu} />
@@ -93,7 +71,17 @@ const Navbar = () => {
           <NavLink label="Research Interests" to="research-interests" closeMenu={toggleMobileMenu} />
           <NavLink label="AI Tools" to="ai-tools" closeMenu={toggleMobileMenu} />
           <NavLink label="Contact" to="contact" closeMenu={toggleMobileMenu} />
-          {/* <NavLink label="Thank You" to="thank-you" closeMenu={toggleMobileMenu} /> */}
+
+          {/* Theme Toggle Button in Mobile Menu */}
+          <div className="flex justify-center">
+            <button
+              onClick={toggleTheme}
+              className={`p-2 rounded-full transition-colors ${theme === 'dark' ? 'bg-slate-800 text-slate-200' : 'bg-slate-100 text-slate-800'}`}
+              aria-label="Toggle theme"
+            >
+              {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
+            </button>
+          </div>
         </div>
       )}
     </nav>
