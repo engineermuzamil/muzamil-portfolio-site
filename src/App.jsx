@@ -38,7 +38,11 @@ function App() {
   const profileImage = "https://imgur.com/a/C9GYhI9";
 =======
   const profileImage = "https://gitlab.com/engineermuzamil/barebone-system/-/raw/master/src/assets/mypic.PNG?ref_type=heads";
+<<<<<<< HEAD
 >>>>>>> b6f3ed2 (initial commit)
+=======
+>>>>>>> 7a2981f (Initial commit)
+>>>>>>> 1e592aa (Initial commit)
 
   return (
     <ThemeProvider>
