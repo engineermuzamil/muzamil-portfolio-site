@@ -6,6 +6,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 0b99632 (fix: update id of every section)
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
 import { Sun, Moon } from 'lucide-react';
@@ -238,8 +241,13 @@ import { Link } from 'react-scroll';
 import { Sun, Moon } from 'lucide-react';
 
 const Navbar = () => {
+
   const logoImage = "https://gitlab.com/engineermuzamil/barebone-system/-/raw/master/src/assets/mypic.PNG?ref_type=heads";
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0b99632 (fix: update id of every section)
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [theme, setTheme] = useState('light');
 
@@ -282,6 +290,10 @@ const Navbar = () => {
           <NavLink label="Research Interests" to="research-interests" />
           <NavLink label="Skills" to="skills" />
           <NavLink label="Contact" to="contact" />
+<<<<<<< HEAD
+=======
+          {/* <NavLink label="Thank You" to="thank-you" /> */}
+>>>>>>> 0b99632 (fix: update id of every section)
         </div>
 
         {/* Mobile Menu Button */}
@@ -318,7 +330,15 @@ const Navbar = () => {
 
       {/* Mobile Menu Links */}
       {isMobileMenuOpen && (
+<<<<<<< HEAD
         <div className={`md:hidden mt-4 space-y-4 transition-colors ${theme === 'dark' ? 'bg-slate-900 text-white' : 'bg-white text-slate-800'}`}>
+=======
+<<<<<<< HEAD
+        <div className="md:hidden mt-4 flex flex-col bg-slate-800 space-y-4 p-4 rounded-lg">
+=======
+        <div className="md:hidden mt-4 space-y-4">
+>>>>>>> 9ca0530 (fix: update id of every section)
+>>>>>>> 0b99632 (fix: update id of every section)
           <NavLink label="Introduction" to="introduction" closeMenu={toggleMobileMenu} />
           <NavLink label="Projects" to="projects" closeMenu={toggleMobileMenu} />
           <NavLink label="Certifications" to="certifications" closeMenu={toggleMobileMenu} />
@@ -329,6 +349,14 @@ const Navbar = () => {
           <NavLink label="Research Interests" to="research-interests" closeMenu={toggleMobileMenu} />
           <NavLink label="Skills" to="skills" closeMenu={toggleMobileMenu} />
           <NavLink label="Contact" to="contact" closeMenu={toggleMobileMenu} />
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+          <NavLink label="Thank You" to="thank-you" closeMenu={toggleMobileMenu} />
+=======
+          {/* <NavLink label="Thank You" to="thank-you" closeMenu={toggleMobileMenu} /> */}
+>>>>>>> 9ca0530 (fix: update id of every section)
+>>>>>>> 0b99632 (fix: update id of every section)
         </div>
       )}
     </nav>

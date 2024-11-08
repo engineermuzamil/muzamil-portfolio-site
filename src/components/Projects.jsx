@@ -180,6 +180,7 @@ const Projects = () => {
 =======
     <section id="projects" className="container mx-auto px-4 py-16">
 >>>>>>> 54a4e1c (fix: update id of every section)
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 451c72e (fix: light bg issues)
@@ -246,6 +247,8 @@ const Projects = () => {
 =======
     <section id="projects" className="container mx-auto px-4 py-16">
 >>>>>>> 54a4e1c (fix: update id of every section)
+=======
+>>>>>>> 0b99632 (fix: update id of every section)
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold mb-4 text-slate-800 dark:text-white">Projects</h2>
         <p className="text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">

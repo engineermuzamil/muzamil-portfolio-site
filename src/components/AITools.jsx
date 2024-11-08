@@ -34,6 +34,9 @@ export default function AITools() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 0b99632 (fix: update id of every section)
     <section id="ai-tools" className="container mx-auto px-4 py-16">
 =======
     <section className="container mx-auto px-4 py-16">
@@ -41,12 +44,15 @@ export default function AITools() {
 =======
     <section id="ai-tools" className="container mx-auto px-4 py-16">
 >>>>>>> 54a4e1c (fix: update id of every section)
+<<<<<<< HEAD
 =======
     <section className="container mx-auto px-4 py-16">
 >>>>>>> b6f3ed2 (initial commit)
 =======
     <section id="ai-tools" className="container mx-auto px-4 py-16">
 >>>>>>> 54a4e1c (fix: update id of every section)
+=======
+>>>>>>> 0b99632 (fix: update id of every section)
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold mb-4 text-slate-800 dark:text-white">Favorite AI Tools</h2>
         <p className="text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
@@ -89,6 +95,9 @@ export default function AITools() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 0b99632 (fix: update id of every section)
 }
 =======
 =======
@@ -173,9 +182,12 @@ export default function AITools() {
 =======
 }
 >>>>>>> 54a4e1c (fix: update id of every section)
+<<<<<<< HEAD
 =======
 // }
 >>>>>>> b6f3ed2 (initial commit)
 =======
 }
 >>>>>>> 54a4e1c (fix: update id of every section)
+=======
+>>>>>>> 0b99632 (fix: update id of every section)
