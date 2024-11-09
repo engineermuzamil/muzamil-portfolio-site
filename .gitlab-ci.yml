@@ -1,0 +1,64 @@
+image: node:18.20.4  # Using Node 18.20.4 as the base image for all jobs
+
+stages:
+  - build
+  - test
+  - deploy
+
+build-job:
+  stage: build
+  script:
+    - yarn install --frozen-lockfile
+    - yarn build
+  artifacts:
+    paths:
+      - dist/  # Use the dist folder as the artifact for deployment
+
+cypress-test-job:
+  image: cypress/browsers:node-18.20.3-chrome-125.0.6422.141-1-ff-126.0.1-edge-125.0.2535.85-1
+  stage: test
+  script:
+    - yarn install --frozen-lockfile
+    - yarn cy:test
+  artifacts:
+    when: always
+    paths:
+      - cypress/videos/**/*.mp4
+      - cypress/screenshots/**/*.png
+    expire_in: 1 week
+  dependencies: 
+    - build-job  # This ensures that tests run after the build
+  timeout: 10m
+  allow_failure: false  # Ensures pipeline fails if tests fail
+
+deploy_preview:
+  stage: deploy
+  except:
+    - main  # Run this job on all branches except main
+  script:
+    - yarn global add vercel
+    - if [ -z "$VERCEL_TOKEN" ]; then echo "VERCEL_TOKEN is not set"; exit 1; fi  # Check if token is empty
+    - vercel pull --yes --environment=preview --token=$VERCEL_TOKEN
+    - vercel build --token=$VERCEL_TOKEN
+    - vercel deploy --prebuilt --token=$VERCEL_TOKEN
+  environment:
+    name: preview
+  dependencies:
+    - build-job
+    - cypress-test-job
+
+deploy_production:
+  stage: deploy
+  only:
+    - main  # Only run this job on the main branch
+  script:
+    - yarn global add vercel
+    - vercel pull --yes --environment=production --token=$VERCEL_TOKEN
+    - vercel build --prod --token=$VERCEL_TOKEN
+    - vercel deploy --prebuilt --prod --token=$VERCEL_TOKEN
+  environment:
+    name: production
+    url: https://engineermuzamil.vercel.app/
+  dependencies:
+    - build-job
+    - cypress-test-job

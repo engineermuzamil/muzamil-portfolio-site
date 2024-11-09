@@ -12,6 +12,7 @@ import Contact from './components/Contact';
 import ThankYou from './components/ThankYou';
 import Footer from './components/Footer';
 import { ThemeProvider } from './context/ThemeContext';
+import Achievements from './components/Achievements';
 
 import profileImage from '../src/assets/mypic.PNG';
 function App() {
@@ -28,10 +29,12 @@ function App() {
         <Certifications />
         <Competencies />
         <ResearchInterests />
+        <Achievements />
         <AITools />
         <Contact />
         <ThankYou />
         <Footer />
+
       </div>
     </ThemeProvider>
   );
