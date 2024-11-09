@@ -41,8 +41,10 @@ const Navbar = () => {
             <NavLink label="Projects" to="projects" />
             <NavLink label="Education" to="education" />
             <NavLink label="Skills" to="skills" />
-            <NavLink label="Certifications" to="certifications" />
+            <NavLink label="Achievements" to="achievements" />
             <NavLink label="Competencies" to="competencies" />
+            <NavLink label="Certifications" to="certifications" />
+
           </ul>
         </div>
 
@@ -68,6 +70,7 @@ const Navbar = () => {
           <NavLink label="Skills" to="skills" closeMenu={toggleMobileMenu} />
           <NavLink label="Certifications" to="certifications" closeMenu={toggleMobileMenu} />
           <NavLink label="Competencies" to="competencies" closeMenu={toggleMobileMenu} />
+          <NavLink label="Achievements" to="achievements" closeMenu={toggleMobileMenu} />
           <NavLink label="Research Interests" to="research-interests" closeMenu={toggleMobileMenu} />
           <NavLink label="AI Tools" to="ai-tools" closeMenu={toggleMobileMenu} />
           <NavLink label="Contact" to="contact" closeMenu={toggleMobileMenu} />
