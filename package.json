@@ -6,8 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "cy:test": "yarn dev & DEV_PID=$! && yarn --cwd ./automation cy:run; TEST_EXIT_CODE=$?; kill $DEV_PID; exit $TEST_EXIT_CODE"
   },
   "dependencies": {
     "lucide-react": "^0.454.0",
