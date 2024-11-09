@@ -5,7 +5,7 @@ import { useTheme } from '../context/ThemeContext';
 export default function Introduction({ profileImage }) {
   return (
     <section id="introduction" className="container mx-auto px-4 mt-16 py-16 flex flex-col items-center text-center relative">
-      <div className="w-32 h-32 rounded-full bg-blue-100 dark:bg-blue-500/10 flex items-center justify-center mb-8 overflow-hidden">
+      <div className="w-64 h-64 rounded-full bg-blue-100 dark:bg-blue-500/10 flex items-center justify-center mb-8 overflow-hidden">
         {profileImage ? (
           <img
             src={profileImage}
