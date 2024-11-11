@@ -18,18 +18,20 @@ cypress-test-job:
   image: cypress/browsers:node-18.20.3-chrome-125.0.6422.141-1-ff-126.0.1-edge-125.0.2535.85-1
   stage: test
   script:
-    - yarn install --frozen-lockfile
-    - yarn cy:test
+    - yarn install --frozen-lockfile          # Install root dependencies
+    - yarn --cwd ./automation install         # Install Cypress and automation dependencies
+    - yarn cy:test                            # Run Cypress tests
   artifacts:
     when: always
     paths:
       - cypress/videos/**/*.mp4
       - cypress/screenshots/**/*.png
     expire_in: 1 week
-  dependencies: 
-    - build-job  # This ensures that tests run after the build
+  dependencies:
+    - build-job
   timeout: 10m
-  allow_failure: false  # Ensures pipeline fails if tests fail
+  allow_failure: false
+
 
 deploy_preview:
   stage: deploy
