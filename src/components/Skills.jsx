@@ -1,56 +1,74 @@
 import React from 'react';
 import { Code2, Terminal, GitBranch, Database } from 'lucide-react';
 
-export default function Skills() {
+const skillsData = [
+  {
+    category: "Testing & QA",
+    skills: [
+      { name: "Manual Testing", level: 90, tools: ["JIRA", "TestRail"] },
+      { name: "Exploratory Testing", level: 85, tools: ["Postman"] },
+      { name: "Test Case Design", level: 80, tools: ["TestLink"] },
+      { name: "Bug Tracking", level: 90, tools: ["Bugzilla", "JIRA"] },
+      { name: "Cross-browser Testing", level: 75, tools: ["BrowserStack"] },
+    ],
+  },
+  {
+    category: "Automation",
+    skills: [
+      { name: "Cypress", level: 85, tools: ["Cypress.io"] },
+      { name: "JavaScript", level: 90, tools: ["Node.js", "React"] },
+      { name: "UI Automation", level: 80, tools: ["Selenium"] },
+      { name: "API Testing", level: 90, tools: ["Postman", "Swagger"] },
+      { name: "Test Frameworks", level: 75, tools: ["Mocha", "Jest"] },
+    ],
+  },
+  {
+    category: "Others",
+    skills: [
+      { name: "SQL", level: 80, tools: ["MySQL", "PostgreSQL"] },
+      { name: "RESTful APIs", level: 85, tools: ["Postman"] },
+      { name: "Database Testing", level: 75, tools: ["SQL Server"] },
+      { name: "Web Technologies", level: 90, tools: ["HTML", "CSS", "JavaScript"] },
+    ],
+  },
+  {
+    category: "Tools & Methods",
+    skills: [
+      { name: "Azure DevOps", level: 80, tools: ["Azure"] },
+      { name: "Agile/Scrum", level: 90, tools: ["JIRA", "Trello"] },
+      { name: "Git Version Control", level: 85, tools: ["GitHub", "GitLab"] },
+      { name: "Documentation", level: 75, tools: ["Confluence"] },
+    ],
+  },
+];
+
+const Skills = () => {
   return (
     <section id="skills" className="container mx-auto px-4 py-16">
-      <h2 className="text-3xl font-bold text-center mb-12 text-slate-800 dark:text-white">Technical Skills</h2>
+      <h2 className="text-3xl font-bold text-center mb-12 text-slate-800 dark:text-white">Skills</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-        <div className="bg-white dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 transition-colors hover:bg-slate-50 dark:hover:bg-slate-800/60">
-          <Terminal className="text-blue-600 dark:text-blue-400 mb-4" size={32} />
-          <h3 className="text-xl font-semibold mb-3 text-slate-800 dark:text-white">Testing & QA</h3>
-          <ul className="space-y-2 text-slate-600 dark:text-slate-300 text-sm">
-            <li>• Manual Testing</li>
-            <li>• Exploratory Testing</li>
-            <li>• Test Case Design</li>
-            <li>• Bug Tracking</li>
-            <li>• Cross-browser Testing</li>
-          </ul>
-        </div>
-        <div className="bg-white dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 transition-colors hover:bg-slate-50 dark:hover:bg-slate-800/60">
-          <Code2 className="text-blue-600 dark:text-blue-400 mb-4" size={32} />
-          <h3 className="text-xl font-semibold mb-3 text-slate-800 dark:text-white">Automation</h3>
-          <ul className="space-y-2 text-slate-600 dark:text-slate-300 text-sm">
-            <li>• Cypress</li>
-            <li>• JavaScript</li>
-            <li>• UI Automation</li>
-            <li>• API Testing</li>
-            <li>• Test Frameworks</li>
-          </ul>
-        </div>
-        <div className="bg-white dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 transition-colors hover:bg-slate-50 dark:hover:bg-slate-800/60">
-          <Database className="text-blue-600 dark:text-blue-400 mb-4" size={32} />
-          <h3 className="text-xl font-semibold mb-3 text-slate-800 dark:text-white">Technical</h3>
-          <ul className="space-y-2 text-slate-600 dark:text-slate-300 text-sm">
-            <li>• SQL</li>
-            <li>• RESTful APIs</li>
-            <li>• Postman</li>
-            <li>• Database Testing</li>
-            <li>• Web Technologies</li>
-          </ul>
-        </div>
-        <div className="bg-white dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 transition-colors hover:bg-slate-50 dark:hover:bg-slate-800/60">
-          <GitBranch className="text-blue-600 dark:text-blue-400 mb-4" size={32} />
-          <h3 className="text-xl font-semibold mb-3 text-slate-800 dark:text-white">Tools & Methods</h3>
-          <ul className="space-y-2 text-slate-600 dark:text-slate-300 text-sm">
-            <li>• Azure DevOps</li>
-            <li>• Agile/Scrum</li>
-            <li>• Git Version Control</li>
-            <li>• JIRA</li>
-            <li>• Documentation</li>
-          </ul>
-        </div>
+        {skillsData.map((category, index) => (
+          <div key={index} className="bg-white dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 transition-colors hover:shadow-lg">
+            <h3 className="text-xl font-semibold text-slate-800 dark:text-white mb-4">{category.category}</h3>
+            {category.skills.map((skill, idx) => (
+              <div key={idx} className="mb-4">
+                <div className="flex justify-between items-center">
+                  <span className="text-slate-600 dark:text-slate-300">{skill.name}</span>
+                  <span className="text-slate-600 dark:text-slate-300">{skill.level}%</span>
+                </div>
+                <div className="relative h-2 bg-gray-200 dark:bg-gray-700 rounded">
+                  <div className="absolute h-2 bg-blue-500 dark:bg-blue-400" style={{ width: `${skill.level}%` }}></div>
+                </div>
+                <div className="mt-1 text-sm text-slate-500 dark:text-slate-400">
+                  <span className="font-semibold">Tools:</span> {skill.tools.join(", ")}
+                </div>
+              </div>
+            ))}
+          </div>
+        ))}
       </div>
     </section>
   );
-}
+};
+
+export default Skills;

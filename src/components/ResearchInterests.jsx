@@ -1,6 +1,27 @@
 import React from 'react';
 import { Brain, Bot, Briefcase, Lightbulb } from 'lucide-react';
 
+const researchInterestsData = [
+  {
+    title: "Advanced Research Focus",
+    description: "Pursuing cutting-edge research in Computer Science, specializing in AI-driven solutions and next-generation automation technologies.",
+    tags: ["Deep Learning", "Automation", "AI"],
+    icon: <Brain className="text-blue-600 dark:text-blue-400" size={80} />,
+  },
+  {
+    title: "AI & Automation Innovation",
+    description: "Developing intelligent testing frameworks that leverage AI to revolutionize software quality assurance processes.",
+    tags: ["AI Testing", "Automation", "Quality Assurance"],
+    icon: <Bot className="text-blue-600 dark:text-blue-400" size={80} />,
+  },
+  {
+    title: "Strategic Product Leadership",
+    description: "Combining technical expertise with product strategy to create innovative solutions that address real-world challenges.",
+    tags: ["Product Strategy", "Agile", "Leadership"],
+    icon: <Briefcase className="text-blue-600 dark:text-blue-400" size={80} />,
+  }
+];
+
 export default function ResearchInterests() {
   return (
     <section id="research-interests" className="container mx-auto px-4 py-16">
@@ -11,76 +32,23 @@ export default function ResearchInterests() {
         </p>
       </div>
 
-      <div className="max-w-3xl mx-auto space-y-8">
-        <div className="bg-white dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800/60 transition-colors">
-          <div className="flex items-start gap-4">
-            <Brain className="text-blue-600 dark:text-blue-400 flex-shrink-0" size={24} />
-            <div>
-              <h3 className="text-xl font-semibold mb-2 text-slate-800 dark:text-white">Advanced Research Focus</h3>
-              <p className="text-slate-600 dark:text-slate-300 mb-4">
-                Pursuing cutting-edge research in Computer Science, specializing in AI-driven solutions and next-generation automation technologies.
-              </p>
-              <ul className="space-y-1">
-                <li className="text-slate-600 dark:text-slate-300 text-sm">• Deep Learning Applications</li>
-                <li className="text-slate-600 dark:text-slate-300 text-sm">• Automated Decision Systems</li>
-                <li className="text-slate-600 dark:text-slate-300 text-sm">• Performance Optimization</li>
-              </ul>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {researchInterestsData.map((interest, index) => (
+          <div key={index} className="bg-white dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 shadow-md transition-transform transform hover:scale-105 hover:shadow-lg">
+            <div className="flex items-start gap-4 ">
+              {interest.icon}
+              <div>
+                <h3 className="text-xl font-semibold mb-2 text-slate-800 dark:text-white">{interest.title}</h3>
+                <p className="text-slate-600 dark:text-slate-300 mb-4">{interest.description}</p>
+                <div className="flex flex-wrap gap-2">
+                  {interest.tags.map((tag, idx) => (
+                    <span key={idx} className="bg-blue-100 text-blue-700 dark:bg-blue-500/20 dark:text-blue-300 px-3 py-1 rounded-full text-sm">{tag}</span>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-
-        <div className="bg-white dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800/60 transition-colors">
-          <div className="flex items-start gap-4">
-            <Bot className="text-blue-600 dark:text-blue-400 flex-shrink-0" size={24} />
-            <div>
-              <h3 className="text-xl font-semibold mb-2 text-slate-800 dark:text-white">AI & Automation Innovation</h3>
-              <p className="text-slate-600 dark:text-slate-300 mb-4">
-                Developing intelligent testing frameworks that leverage AI to revolutionize software quality assurance processes.
-              </p>
-              <ul className="space-y-1">
-                <li className="text-slate-600 dark:text-slate-300 text-sm">• AI-Driven Test Generation</li>
-                <li className="text-slate-600 dark:text-slate-300 text-sm">• Intelligent Test Automation</li>
-                <li className="text-slate-600 dark:text-slate-300 text-sm">• Predictive Quality Analytics</li>
-                <li className="text-slate-600 dark:text-slate-300 text-sm">• Continuous Testing Integration</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div className="bg-white dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800/60 transition-colors">
-          <div className="flex items-start gap-4">
-            <Briefcase className="text-blue-600 dark:text-blue-400 flex-shrink-0" size={24} />
-            <div>
-              <h3 className="text-xl font-semibold mb-2 text-slate-800 dark:text-white">Strategic Product Leadership</h3>
-              <p className="text-slate-600 dark:text-slate-300 mb-4">
-                Combining technical expertise with product strategy to create innovative solutions that address real-world challenges.
-              </p>
-              <ul className="space-y-1">
-                <li className="text-slate-600 dark:text-slate-300 text-sm">• Product Vision & Strategy</li>
-                <li className="text-slate-600 dark:text-slate-300 text-sm">• Agile Leadership</li>
-                <li className="text-slate-600 dark:text-slate-300 text-sm">• User-Centric Design</li>
-                <li className="text-slate-600 dark:text-slate-300 text-sm">• Data-Driven Decisions</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div className="bg-white dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800/60 transition-colors">
-          <div className="flex items-start gap-4">
-            <Lightbulb className="text-blue-600 dark:text-blue-400 flex-shrink-0" size={24} />
-            <div>
-              <h3 className="text-xl font-semibold mb-2 text-slate-800 dark:text-white">Industry Impact</h3>
-              <p className="text-slate-600 dark:text-slate-300 mb-4">
-                Committed to applying research insights to solve real industry challenges and drive technological advancement.
-              </p>
-              <ul className="space-y-1">
-                <li className="text-slate-600 dark:text-slate-300 text-sm">• Research to Production Implementation</li>
-                <li className="text-slate-600 dark:text-slate-300 text-sm">• Industry-Academia Collaboration</li>
-                <li className="text-slate-600 dark:text-slate-300 text-sm">• Innovation Leadership</li>
-              </ul>
-            </div>
-          </div>
-        </div>
+        ))}
       </div>
     </section>
   );
