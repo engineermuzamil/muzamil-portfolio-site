@@ -37,3 +37,51 @@ li {
   font-size: 1.125rem;
   /* approx 20.25px */
 }
+
+.certifications {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.card {
+  background: #fff;
+  /* Light theme */
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 16px;
+  width: 200px;
+  position: relative;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card.verified {
+  border-left: 4px solid green;
+  /* Example for verified */
+}
+
+.card .tooltip {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.card .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+}
+
+.card:hover .tooltiptext {
+  visibility: visible;
+}
